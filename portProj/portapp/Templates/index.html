@@ -1,0 +1,199 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="{% static 'stylesheet.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="{% url 'home' %}" class="active">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'projects' %}">Projects</a>
+            <a href="{% url 'skills' %}">Skills</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h1>Srinivasa G Pujar</h1>
+            <h4>Python | Django | JavaScript | Figma(UI/UX) | HTML | CSS | NumPy | Pandas | MatplotLib | BootStrap | MySql | MongoDB | SDLC | VS Code | IntelliJ IDEA | Jupyter | MySql WorkBench |  Version Controlling using GitHub </h4>
+            <div><br></div>
+            <h5> <div style="display: inline;">Using Machine learning & AI =></div> </h5></h5>
+            <h5><div style="display: inline;">Built 'Fake profile detection Application', <br>'Exploratory Data Analysis On Car Sales Data' & <br>'Uber Data Analysis using Machine Learning'.</div><br></h5>
+            <div><br></div>
+            <h5><div  style="display: inline;">Built 'Voice recognition App' using PYTHON => 'Alexa'.</div></h5>
+            <div><br></div>
+            <h5><div  style="display: inline;">Designed 'IOT project' using Arduino Nano components(Firmware) => 'Mp3 Player'.</div></h5>
+            <div><br></div>
+            <h5><div  style="display: inline;">Developed using 'Django' & 'Vue.js' => 'QuizApp'.</div></h5>
+            <div><br></div>
+            <h5><div  style="display: inline;">Designed using HTML, CSS & JavaScript => 'E-Commerce website'.</div></h5>
+            <div><br></div>
+            <h4>E-mail : srinivaspujar2001@gmail.com</h4>
+            <i class="bx bxs-phone"></i> +91 - 7259262818
+            
+            
+
+            <div class="home-sci">
+                <a href="https://www.linkedin.com/in/srinivasa-g-pujar-6a1670333/" style="--i:1"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="https://github.com/SrinivasPujar18?tab=repositories" style="--i:2"><i class='bx bxl-github' ></i></a>
+                <a href="https://mail.google.com/mail/u/2/#inbox?compose=DmwnWrRttNpNhnpRKZpBXWMzXsmHbGmNHvzJzttgCwsVxdtfMTmLzxpZdqmDxpZLJGgzJNWZBJbv" style="--i:3"><i class='bx bxl-gmail'></i></a>
+                
+            </div>
+            <!--<div class="about-img">
+                <img src="circle image.png" class="circular-glow" alt="Profile Image">
+            </div>   -->
+            
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="{% static 'circle image.png' %}" class="circular-glow" alt="Profile">
+        </div> 
+        <div class="about-text">
+            <h2>About<span>Me</span></h2>
+            <h4>Full Stack Developer!</h4>
+            <p>I've completed my post graduation in  MCA, with hands-on experience in full-stack web development, Software configuration & machine learning. 
+                Proficient in Python, JavaScript & frameworks like Django & libraries like  Pandas, NumPy, MatplotLib & worked on GitHub version control systems. <br>
+                Built multiple academic projects including a Fake Profile Detection System & E-commerce platform. 
+                Strong in OOP's concepts & data analysis using Pandas, NumPy & visualization tools. <br>
+                Completed internships & certifications that enhance both software development & problem-solving skills.
+            </p>
+                <!-- <a href="#" class="btn-box">More About Me</a> -->
+        </div>
+    </section>
+    <section>
+        <div class="services" id="services">
+            <div class="container-pro">
+                <h1 class="sub-title">My<span>Projects</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class='bx bxs-microphone' style='color:#00eeff'  ></i>
+                        <h2>Personal Desktop Assistant</h2>
+                        <p>By using (HTML, CSS, Python & it's Packages). Created a Virtual assistant which takes the input through voice & fetches the result. 
+                            The features integrated are: Play Songs, Current time, Information about someone, & many more. </p>
+                        <a href="https://github.com/SrinivasPujar18/Personal-Desktop-Assistant" class="read">Click here for code</a>
+                    </div>
+
+                    <div>
+                        <i class='bx bxs-bot' style='color:#00eeff'></i>
+                        <h2>Fake Profile Detection On Social Networking Using Machine Learning </h2>
+                        <p>By using (Python, Django, HTML, CSS, MySQL) & Support Vector Machine (SVM) , Natural Language & Decision Tree Algorithms.   
+                            Enhancing Online Security in Real Time Detection on all social Platform like Facebook, Instagram etc. </p>
+                        <a href="https://github.com/SrinivasPujar18/Fake_profile_detection_using_ML" class="read">Click here for code</a>
+                    </div>
+
+                    <div>
+                        <i class='bx bxs-cart' style='color:#00eeff' ></i>
+                        <h2>Online Furniture Store </h2>
+                        <p> By using (HTML/CSS, JavaScript, MySQL, Python, Django). Web Application where users can purchase the furnitures through online. 
+                            The features integrated are: Product description, Add_to_cart, Payment Details, Shipping Status.</p>
+                        <a href="#" class="read">Click here for code</a>
+                    </div>
+
+                    <div>
+                        <i class='bx bxs-bot' style='color:#00eeff' ></i>
+                        <h2>Exploratory Data Analysis On Car Sales Data</h2>
+                        <p> By using (Python & it's libraries). Performed in-depth analysis using Pandas, Matplotlib, Seaborn to uncover sales trends, 
+                            brand performance, & market insights from historical car sales data. </p>
+                        <a href="https://github.com/SrinivasPujar18/Exploratory_car_ML" class="read">Click here for code</a>
+                    </div>
+
+                    <div>
+                        <i class='bx bxs-music' style='color:#00eeff' ></i>
+                        <h2>Mp3 Player Using Arduino Nano In Internet of things(IoT)</h2>
+                        <p> By using (Arduino IDE & Using IoT Components). By using IoT components like DF Player, Bluetooth Module, LCD I2C & Arduino Nano to achieve Sounding. </p>
+                        <a href="https://github.com/SrinivasPujar18/IOT_MP3_Player" class="read">Click here for code</a>
+                    </div>
+
+                    <div>
+                        <i class='bx bxs-bot' style='color:#00eeff' ></i>
+                        <h2>Uber Data Analysis using Machine Learning</h2>
+                        <p> By using (Python & it's libraries). Analyzed Uber ride data using Pandas to uncover ride patterns, demand trends, & location-based insights, 
+                            applied machine learning models to predict peak hours & ride demand.</p>
+                        <a href="https://github.com/SrinivasPujar18/Uber_data_ML" class="read">Click here for code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <h1 class="sub-title">My<span>Skills</span></h1> -->
+    <div class="container">
+        <section class="skills-box">
+            <div class="myskills-text">
+                <h2>Technical<span>Skills</span></h2>
+                <table>
+                    <tr>
+                        <td><strong>Programming Languages</strong></td>
+                        <td>: Python, Core Java, JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td><strong>FrameWork / Libraries</strong></td>
+                        <td>: Django & BootStrap, NumPy, Pandas, MatplotLib</td>
+                    </tr>
+                    <tr>
+                        <td><strong>UI / UX</strong></td>
+                        <td>: Figma (with HTML, CSS)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>DataBase</strong></td>
+                        <td>: MySQL, MongoDB</td>
+                    </tr>
+                    <tr>
+                        <td><strong>PlatForms</strong></td>
+                        <td>: VS code, IntelliJ IDEA, Jupyter, MySQL WorkBench</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Other Skills</strong></td>
+                        <td>: OOP's, Version Control System using GitHub & <br> &nbsp; Software Development Life Cycle (SDLC) & AI / ML &nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </div>
+    
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact<span>Me</span></h2>
+            <h4>Let's Work Together</h4>
+            <p>I’ve designed my website showcasing my work & skills. Feel free to explore it & contact me through the details provided here.</p>
+            <div class="contact-list">
+                <li><i class="bx bxs-send"></i> srinivaspujar2001@gmail.com</li>
+                <li><i class="bx bxs-phone"></i> +91 - 7259262818</li>
+            </div>
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/srinivasa-g-pujar-6a1670333/"><i class='bx bxl-linkedin' ></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+                <a href=""><i class='bx bxl-twitter' ></i></a>
+                <a href=""><i class='bx bxl-facebook' ></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="">
+                <input type="" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Enter Your Email" required>
+                <input type="" placeholder="Enter Your Subject" required>
+                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+                <input type="submit" value="submit" class="send">
+            </form>
+        </div>
+    </section>
+    <div class="last-text">
+        <p>Code Never Lies, Comments Somtimes Do...!<br>Yes = !No<br>© Srinivasa G Pujar ✌️</p>
+    </div>
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+    <script src="{% static 'main.js' %}"></script>
+</body>
+
+</body>
+</html>
